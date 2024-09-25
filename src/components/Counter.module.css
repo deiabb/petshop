@@ -1,0 +1,32 @@
+.counterContainer {
+    display: flex;
+}
+
+.counter {
+    font-weight: 600;
+}
+
+.btnCounter {
+    width: 40px;
+    height: 40px;
+    margin: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.btnRemove {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    height: 30px;
+    padding: 0.5rem;
+}
+
+.btnsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+

@@ -1,0 +1,27 @@
+.cardProduct {
+    width: 250px;
+    height: 300px;
+    background-color:#fcf6e9;
+    border: 3px solid cadetblue;
+    color: black;
+    border-radius: 20px;
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
+}
+
+.productsArea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.productPrice {
+    font-weight: 600;
+}
+
+.productDescription {
+    font-size: 14px;
+}
