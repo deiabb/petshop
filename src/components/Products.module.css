@@ -1,9 +1,10 @@
 .cardProduct {
     width: 250px;
     height: 300px;
-    background-color:#fcf6e9;
-    border: 3px solid cadetblue;
-    color: black;
+    background-image: url('./../assets/background.png');
+    background-size:  25vw;
+    background-repeat: no-repeat;
+    color: #3F3CA6;
     border-radius: 20px;
     margin: 2rem;
     padding: 1rem;
@@ -24,4 +25,5 @@
 
 .productDescription {
     font-size: 14px;
+    color: black;
 }

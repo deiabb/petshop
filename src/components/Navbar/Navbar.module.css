@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color:#fcf6e9;
+    background-color:#ffffff;
     width: 100vw;
     justify-content: center;
     padding-top: 1.25rem;
@@ -27,7 +27,7 @@
     font-weight: 600;
 }
 .navLink:visited {
-    color: #000000;
+    color: #F257AC;
     
 }
 
