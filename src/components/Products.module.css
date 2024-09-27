@@ -1,14 +1,31 @@
 .cardProduct {
-    width: 250px;
-    height: 300px;
+  width: 200px;
+  margin: 3rem;
+}
+
+.titleProduct {
+    font-size: 1rem;
+}
+
+.imgProduct {
+    width: 200px;
+    height: 200px;
     background-image: url('./../assets/background.png');
-    background-size:  25vw;
+    background-size:  18vw;
     background-repeat: no-repeat;
     color: #3F3CA6;
     border-radius: 20px;
-    margin: 2rem;
+    border: 1px solid rgb(224, 220, 220) ;
     padding: 1rem;
-    box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
+    /* box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
 }
 
 .productsArea {
@@ -26,4 +43,11 @@
 .productDescription {
     font-size: 14px;
     color: black;
+}
+
+.btnDescription {
+    border: none;
+    background-color: #b9bf045c;
+    height: 30px;
+    width: 200px;
 }

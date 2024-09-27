@@ -1,5 +1,9 @@
 .counterContainer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    height: 30px;
 }
 
 .counter {
@@ -7,18 +11,22 @@
 }
 
 .btnCounter {
-    width: 40px;
-    height: 40px;
-    margin: 0.5rem;
-    border-radius: 8px;
+    margin: 0;
+    padding: 0 2.5rem;
     border: 1px solid transparent;
+    color: #B9BF04;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .btnRemove {
-    border-radius: 8px;
+    
     border: 1px solid transparent;
     height: 30px;
     padding: 0.5rem;
+    background-color: #F29F05;
+    width: 100%;
 }
 
 .btnsContainer {
@@ -26,6 +34,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid #B9BF04;
 }
 
 

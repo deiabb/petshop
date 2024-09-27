@@ -6,6 +6,8 @@ import CartWidget from '../CartWidget';
 
 export default function NavBar() {
 
+    const [cart, setCart] = useState([1,2,3]);
+
 
     return (
         <nav className={styles.navBar}>

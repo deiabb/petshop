@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './CartWidget.module.css';
+import { Count } from "./Counter";
 
 export default function CartWidget() {
     let count = 0
@@ -11,7 +12,10 @@ export default function CartWidget() {
                 shopping_cart_checkout
                 </span>
                 </p>
+                <Count></Count>
                 <p className={styles.counter} >{count}</p>
+                
+
         </>
     )
 }
