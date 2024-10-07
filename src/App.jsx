@@ -1,20 +1,20 @@
+import React from 'react';
 import './App.css';
 import NavBar from './components/Navbar/NavBar';
-import Products from './components/Products';
-import { productsList } from './assets/data';
-import { useState } from 'react';
+import Products from './components/Products/Products';
+
+
+
+
 
 function App() {
- 
-  const products = productsList;
-
+  
   return (
     <>  
-      <NavBar/>
-      <Products products={products}/>
+        <NavBar/>
+        <Products nome="Deborah"/>
+        
     </>
   )
 }
 export default App
-
-

@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import styles from '../components/Counter.module.css'
-// import { Count } from "./Count";
-
-
 
 
 export const Count = ({children}) => {
@@ -11,18 +8,28 @@ export const Count = ({children}) => {
     )
 }
 
-
-export default function Counter() {
+export default function Counter({}) {
     let [count, setCount] = useState(0);
- 
+    function aumenta() {
+        setCount(count +1)
+    }
+
+    function diminui() {
+        if (count > 0) {
+            setCount(count - 1)
+        } else {
+            setCount(0)
+        }
+        
+    }
     return (
         <>
             
             <div className={styles.btnsContainer}>
                 <div className={styles.counterContainer}>
-                    <button className={styles.btnCounter} onClick={()=>setCount(count > 0 ? count -1 : count)}>-</button>
+                    <button className={styles.btnCounter} onClick={diminui} >-</button>
                     <Count className={styles.counter}>{count}</Count>
-                    <button className={styles.btnCounter} onClick={()=>setCount(count +1)}>+</button>
+                    <button className={styles.btnCounter} onClick={aumenta} >+</button>
                 </div>
                     <button className={styles.btnRemove} onClick={()=>setCount(0)}>Remover</button>
             </div>

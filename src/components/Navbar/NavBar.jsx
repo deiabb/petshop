@@ -1,12 +1,10 @@
 import styles from './NavBar.module.css'
-import * as React from 'react';
-import { useState } from 'react';
+import React from 'react';
 import logo from '../../assets/kikiPetLg.png'
-import CartWidget from '../CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
+
 
 export default function NavBar() {
-
-    const [cart, setCart] = useState([1,2,3]);
 
 
     return (

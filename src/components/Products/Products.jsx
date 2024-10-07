@@ -1,20 +1,31 @@
-import * as React from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './Products.module.css'
-import Counter from './Counter.jsx';
-import { useState } from 'react';
+import fetchProducts from '../../api/fetchProducts';
+import ProductCard from '../ProductCard/ProductCard';
 
 
-export default function Products({products}){
+export default function Products(props){
+   const [products, setProducts] = useState([]);
+
+   useEffect(() => {
+    fetchProducts('petshop')
+    .then((response) => {
+        setProducts(response)
+    })
+   }, []);
+
    
+
     return (
-        <>
-            
+    
             <div className={styles.productsArea}>
-            {products.map((singleProduct) => {
-                return <Product product={singleProduct}/>
-            })}
+                
+                {
+                    products.map((product) =>
+                        
+                        <ProductCard key={product.id} title={product.title} price={product.price} thumbnail={product.thumbnail}/>
+                )}
             </div>
-        </>
     )
 }
 
